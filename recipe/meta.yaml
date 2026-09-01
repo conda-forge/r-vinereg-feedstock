@@ -1,4 +1,4 @@
-{% set version = '0.12.1' %}
+{% set version = "0.13.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vinereg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vinereg/vinereg_{{ version }}.tar.gz
-  sha256: 90bf7185b26ea59e2a499a38ca010d66831298246bca1652d566d02376a607a7
+  sha256: cb4b2acf34aff8daaf7f1e094a2baf9b1a59b7b8c10ef036848fdc462d9d0564
 
 build:
   number: 0
@@ -64,9 +64,7 @@ test:
 about:
   home: https://tnagler.github.io/vinereg/
   license: GPL-3.0-only
-  summary: Implements D-vine quantile regression models with parametric or nonparametric pair-copulas.
-    See Kraus and Czado (2017) <doi:10.1016/j.csda.2016.12.009> and Schallhorn et al.
-    (2017) <doi:10.48550/arXiv.1705.08310>.
+  summary: Implements D-vine quantile regression models with parametric or nonparametric pair-copulas. See Kraus and Czado (2017) <doi:10.1016/j.csda.2016.12.009> and Schallhorn et al. (2017) <doi:10.48550/arXiv.1705.08310>.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
